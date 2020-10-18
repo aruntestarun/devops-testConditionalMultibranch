@@ -18,6 +18,7 @@ pipeline {
           steps {
                echo "Conditional Multibranch Build" 
                sleep 5
+               sh 'fail'
            }           
         } 
         stage("Conditional Multibranch Deploy") {
