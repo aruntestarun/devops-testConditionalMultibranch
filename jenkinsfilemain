@@ -4,23 +4,23 @@ pipeline {
       maven 'Maven'
    }
    stages {
-       stage("Conditional Multibranch Build") {
+       stage("Conditional Multibranch Build branch surf") {
            steps {
-               echo "Conditional Multibranch Build" 
+               echo "Conditional Multibranch Build branch surf" 
                sleep 5
            }
        }
        
-       stage("Conditional Multibranch Test") {
+       stage("Conditional Multibranch Test branch surf") {
           steps {
-               echo "Conditional Multibranch Build" 
+               echo "Conditional Multibranch Build branch surf" 
                sleep 5
            }           
         } 
-        stage("Conditional Multibranch Deploy") {
+        stage("Conditional Multibranch Deploy branch surf") {
            steps {
              // snDevOpsChange()
-               echo "Conditional Multibranch Deploy" 
+               echo "Conditional Multibranch Deploy branch surf" 
                sleep 5
            }
         }
