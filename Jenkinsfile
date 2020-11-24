@@ -1,8 +1,8 @@
 pipeline {
    agent any
-   tools {
-      maven 'Maven'
-   }
+  // tools {
+    //  maven 'Maven'
+   //}
    stages {
        stage("Conditional Multibranch Build branch surf") {
            steps {
