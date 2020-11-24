@@ -6,21 +6,24 @@ pipeline {
    stages {
        stage("Conditional Multibranch Build branch surf") {
            steps {
-               echo "Conditional Multibranch Build branch surf" 
+               echo "Conditional Multibranch Build branch jpmc" 
                sleep 5
            }
        }
        
        stage("Conditional Multibranch Test branch surf") {
+          when {
+            branch 'abc'
+          }
           steps {
-               echo "Conditional Multibranch Build branch surf" 
+               echo "Conditional Multibranch Build branch jpmc" 
                sleep 5
            }           
         } 
         stage("Conditional Multibranch Deploy branch surf") {
            steps {
              //snDevOpsChange()
-               echo "Conditional Multibranch Deploy branch surf" 
+               echo "Conditional Multibranch Deploy branch jpmc" 
                sleep 5
            }
         }
