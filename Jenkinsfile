@@ -19,7 +19,7 @@ pipeline {
         } 
         stage("Conditional Multibranch Deploy branch surf") {
            steps {
-             snDevOpsChange()
+             //snDevOpsChange()
                echo "Conditional Multibranch Deploy branch surf" 
                sleep 5
            }
