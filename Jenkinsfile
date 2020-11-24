@@ -13,7 +13,7 @@ pipeline {
        
        stage("Conditional Multibranch Test branch surf") {
           when {
-            branch 'abc'
+            branch 'scratch/surf'
           }
           steps {
                echo "Conditional Multibranch Build branch jpmc" 
