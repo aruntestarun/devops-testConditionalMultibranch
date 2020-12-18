@@ -22,7 +22,7 @@ pipeline {
         } 
         stage("Conditional Multibranch Deploy branch surf") {
            steps {
-             snDevOpsChange()
+             snDevOpsChange(ignoreErrors:true)
                echo "Conditional Multibranch Deploy branch jpmc" 
                sleep 5
            }
