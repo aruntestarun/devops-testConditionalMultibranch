@@ -4,16 +4,16 @@ pipeline {
     //  maven 'Maven'
    //}
    stages {
-       stage("Conditional Multibranch Build branch surf") {
+       stage("Conditional Multibranch Build branch jpmc") {
            steps {
                echo "Conditional Multibranch Build branch jpmc" 
                sleep 5
            }
        }
        
-       stage("Conditional Multibranch Test branch surf") {
+       stage("Conditional Multibranch Test branch jpmc") {
           when {
-            branch 'scratch/surf'
+            branch 'scratch/jpmc'
           }
           steps {
                echo "Conditional Multibranch Build branch jpmc" 
@@ -22,7 +22,7 @@ pipeline {
         } 
         stage("Conditional Multibranch Deploy branch surf") {
            steps {
-             snDevOpsChange(ignoreErrors:true)
+             //snDevOpsChange(ignoreErrors:true)
                echo "Conditional Multibranch Deploy branch jpmc" 
                sleep 5
            }
