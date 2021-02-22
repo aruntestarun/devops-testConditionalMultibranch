@@ -23,7 +23,7 @@ pipeline {
         } 
         stage("Conditional Multibranch Deploy") {
            steps {
-              // snDevOpsChange(ignoreErrors:false)
+              snDevOpsChange(ignoreErrors:false)
                echo "Conditional Multibranch Deploy" 
                sleep 5
            }
