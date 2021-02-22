@@ -15,6 +15,9 @@ pipeline {
        }
        
        stage("Conditional Multibranch Test") {
+          when {
+            branch 'scratch/surf'
+          }
           steps {
                echo "Conditional Multibranch Build" 
                sleep 5
